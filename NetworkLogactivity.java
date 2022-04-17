@@ -16,7 +16,7 @@ public class NetworkLogactivity {
 		DevTools devtools = driver.getDevTools();
 		devtools.createSession();
 		devtools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
-
+		System.out.println("testing for git by american boy");
 		devtools.addListener(Network.requestWillBeSent(), request -> {
 			Request req = request.getRequest();
 			System.out.println(req.getUrl());
