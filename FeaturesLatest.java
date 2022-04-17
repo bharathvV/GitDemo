@@ -17,6 +17,7 @@ public class FeaturesLatest {
 				Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(),
 				Optional.empty(), Optional.empty()));
 		// Optional.empty()
+		System.out.println();
 		driver.get("https://rahulshettyacademy.com/angularAppdemo/");
 		driver.findElement(By.cssSelector(".navbar-toggler")).click();
 		Thread.sleep(3000);
