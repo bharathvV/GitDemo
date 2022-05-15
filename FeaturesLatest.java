@@ -15,15 +15,15 @@ public class FeaturesLatest {
 		devtools.createSession();
 		devtools.send(Emulation.setDeviceMetricsOverride(600, 1000, 38, true, Optional.empty(), Optional.empty(),
 				Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(),
-				Optional.empty(), Optional.empty()));
+				Optional.empty(), Optional.empty())); 
 		// Optional.empty()
-		System.out.println("changes done by american boy1");
-		System.out.println("changes done by american boy2");
-		System.out.println("changes done by american boy3");
+		System.out.println(); 
 		driver.get("https://rahulshettyacademy.com/angularAppdemo/");
 		driver.findElement(By.cssSelector(".navbar-toggler")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.linkText("Library")).click();
+		System.out.println("branch creation part learning in git okay");
+		System.out.println("with new develop bracnhin file 2");
 	}
 
 }

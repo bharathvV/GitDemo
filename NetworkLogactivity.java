@@ -21,7 +21,7 @@ public class NetworkLogactivity {
 			Request req = request.getRequest();
 			System.out.println(req.getUrl());
 		});
-
+     
 		devtools.addListener(Network.responseReceived(), response -> {
 			Response res = response.getResponse();
 			System.out.println(res.getStatusCode());
@@ -29,6 +29,8 @@ public class NetworkLogactivity {
 
 		driver.get("https://rahulshettyacademy.com/angularAppdemo/");
 		driver.findElement(By.cssSelector("a[routerlink*='library']")).click();
+		System.out.println("Creationg of branch to test");
+		System.out.println("with new develop bracnhin file 1");
 
 	}
 
